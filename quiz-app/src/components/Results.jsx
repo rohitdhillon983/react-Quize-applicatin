@@ -15,7 +15,7 @@ const Results = ({ userAnswers, quizData}) => {
   }).length;
 
   // console.log(Unattempts)
-  const wrongAnswers = answers.length - score - notAttemptedQuestions
+  const wrongAnswers = quizData.questions.length - score - notAttemptedQuestions
   const TotalScore = (score*4)-(wrongAnswers*1)
 
   return (
