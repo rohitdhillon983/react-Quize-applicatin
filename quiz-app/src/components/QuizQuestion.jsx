@@ -6,7 +6,7 @@ import Results from "./Results";
 const QuizQuestion = ({ quizData }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]); // Stores user's answers
-  const [points, setPoints] = useState(0);
+  // const [points, setPoints] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [timeLeft, setTimeLeft] = useState(quizData.duration * 60); // Convert minutes to seconds
   const [quizEnded, setQuizEnded] = useState(false); // Track if the quiz has ended
@@ -45,15 +45,15 @@ const QuizQuestion = ({ quizData }) => {
 
     // Update points and correct answers based on the new selection
     if (selectedOption.isCorrect) {
-      setPoints((prevPoints) => prevPoints + 4); // Add points for correct answer
+      // // // // setPoints((prevPoints) => prevPoints + 4); // Add points for correct answer
       setCorrectAnswers((prevCorrect) => prevCorrect + 1); // Increment correct answers
     } else {
-      setPoints((prevPoints) => prevPoints - 1); // Deduct points for wrong answer
+      // // // // setPoints((prevPoints) => prevPoints - 1); // Deduct points for wrong answer
     }
 
     // If the user had previously selected a correct answer, revert the points and correct answers
     if (previousOption && previousOption.isCorrect) {
-      setPoints((prevPoints) => prevPoints - 4); // Revert points for previously correct answer
+      // // // // setPoints((prevPoints) => prevPoints - 4); // Revert points for previously correct answer
       setCorrectAnswers((prevCorrect) => prevCorrect - 1); // Decrement correct answers
     }
   };
@@ -88,8 +88,8 @@ const QuizQuestion = ({ quizData }) => {
   if (quizEnded || currentQuestionIndex === quizData.questions.length) {
     return (
       <Results
-        points={points}
-        correctAnswer={correctAnswers}
+        // points={points}
+        // // correctAnswer={correctAnswers}
         userAnswers={userAnswers}
         quizData={quizData}
       />
