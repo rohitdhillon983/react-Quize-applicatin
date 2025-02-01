@@ -186,6 +186,10 @@ quiz-app/\
 
 - The results page displays the user's score, selected answers, and correct answers.
 
+## Screenshorts
+[image 1](https://drive.google.com/file/d/1doJaZVPpsH6pyTU1ZJqPy55qiWERF1YY/view?usp=sharing),
+[image 2](https://drive.google.com/file/d/1Z4omWXuu55A1XcYzNdpzPRu_09XV7j2B/view?usp=sharing),
+[image 3](https://drive.google.com/file/d/1q6Mvf0ybeQ1EDPNPDEdksybUJVN_l6OD/view?usp=sharing)
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
